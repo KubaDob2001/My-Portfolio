@@ -1,0 +1,43 @@
+.section-img-bg {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background: url("../assets/bg.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.section-img-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.section-img-bg h1 {
+    font-size: 2.4rem;
+}
+
+.section-img-bg p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .section-img-bg h1 {
+        font-size: 2rem;
+    }
+}
