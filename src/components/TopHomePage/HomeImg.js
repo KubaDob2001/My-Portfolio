@@ -2,7 +2,7 @@ import "./HomeImgStyles.css";
 
 import React from 'react'
 
-import BgImg from "../assets/bg.jpg"
+import BgImg from "../../assets/bg.jpg"
 import { Link } from "react-router-dom";
 
 const HomeImg = () => {
